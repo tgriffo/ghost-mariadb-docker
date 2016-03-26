@@ -5,14 +5,14 @@
 #	sh /install_newrelic.sh ${NEW_RELIC}
 #fi
 
-#_theme_source_destination="${HOME}/content/themes/casper"
+# _theme_source_destination="${HOME}/content/themes/casper"
 
-#if [ -d ${_theme_source_destination} ]; then
+# if [ -d ${_theme_source_destination} ]; then
 #    cd ${_theme_source_destination} && git pull origin master
 #    cd $HOME
-#else
+# else
 #    git clone ${THEME_SOURCE} $HOME/content/themes/casper
-#fi
+# fi
 
 chown -R ghost /var/www/ghost
 su ghost -c "npm start"

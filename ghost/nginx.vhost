@@ -1,7 +1,7 @@
 server {
   listen 0.0.0.0:80;
-  server_name blog.mewm.org; #replace this line with your domain
-  access_log /var/log/nginx/blog.mewm.org.log; #replace this with any log name
+  server_name tiago.griffo.me; #replace this line with your domain
+  access_log /var/log/nginx/tiago.griffo.me.log; #replace this with any log name
 
   location / {
       proxy_set_header X-Real-IP $remote_addr;

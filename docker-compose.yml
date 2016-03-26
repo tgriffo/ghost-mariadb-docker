@@ -3,7 +3,7 @@ data:
   volumes:
     - /var/lib/mysql
     - /var/www/ghost/content
-#    - /Users/mewm/www/ghost-theme:/var/www/ghost/content/themes/casper This can be added for theme development. Comment out the theme stuff in run-ghost.sh before rebuilding
+    # - /Users/mewm/www/ghost-theme:/var/www/ghost/content/themes/casper This can be added for theme development. Comment out the theme stuff in run-ghost.sh before rebuilding
 db:
   build: ./mariadb
   ports:
@@ -31,8 +31,8 @@ web:
     - DB_DATABASE=ghost
     - NODE_ENV=production
     - URL=http://tiago.griffo.me
-    - THEME_SOURCE=https://github.com/tgriffo/ghost-theme # Git repo to fetch theme from
-    - NEW_RELIC_LICENSE_KEY=e68f1e2325c9fe241763a5d8d5c83f52c709430b
+    # - THEME_SOURCE=https://github.com/tgriffo/ghost-theme # Git repo to fetch theme from
+    # - NEW_RELIC_LICENSE_KEY=e68f1e2325c9fe241763a5d8d5c83f52c709430b
 #newrelicservermon:
 #  image: uzyexe/newrelic
 #  hostname: tiago.griffo.me
