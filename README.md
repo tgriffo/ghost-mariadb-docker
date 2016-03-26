@@ -1,10 +1,4 @@
-Ghost theme derived from Sticko
-=======
+# Ghost and MariaDB on Docker with a Theme
 
-
-
-Sticko: A free ghost theme https://github.com/damianmuti/sticko
-_Changes have been made_
-
-
+It hosts the infrastructure to http://tiago.griffo.me/
 
